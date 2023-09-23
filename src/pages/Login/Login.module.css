@@ -1,32 +1,77 @@
-.containerInput {
-  margin-top: 6rem;
-  width: 300px;
+main {
+  background: linear-gradient(296deg, #C3DBF9 -10.06%, #5A81B2 46.82%, #5A81B2 79.47%);
+  height:100vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.loginContainer {
+  height:50rem;
+  width: 40rem;
+  border-radius: 40px;
+  background: var(--bg-light);
+  box-shadow: 13px 13px 11px 0px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.formContainer {
+  background-color: rgba(90, 129, 178, 0.15);;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex-shrink: 0;
+  border-radius: 36px;
+  margin-top: 3rem;
+  width: 30rem;
+  height: 30rem;
+  padding: 3.5rem;
+}
+
+
+h1 {
+  color: var(--text-color);
+  font-family: Heebo;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+}
+
+.inputContainer {
+  width: 400px;
   position: relative;
+  margin-top: 2.5rem;
 }
 
-.inputEl {
-  width: 100%;
-  height: 50px;
-  display: block;
-  padding: 0.2rem;
-  border: 2px #ccc solid;
-  border-radius: 5px;
-  outline: none;
+.btnContainer {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
-.label {
-  color: #ccc;
-  position: absolute;
-  top: 15px;
-  left: 10px;
-  pointer-events: none;
-  letter-spacing: 1px;
-  font-size: 1rem;
+.btnLogin {
+  width: 172px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--text-color);
+  color: var(  --bg-light);
+  font-family: Heebo;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
 }
-.inputEl:focus~.label, .inputEl:valid ~ .label{
-  top:-10px;
-  font-size: .8rem;
-  padding: 3px;
-  background-color: white;
-  transition: all .4s ease-in-out;
-} 
+
+.btnLogin:hover {
+  box-shadow: 5px 5px 5px 0px var(--text-color);
+  
+}
