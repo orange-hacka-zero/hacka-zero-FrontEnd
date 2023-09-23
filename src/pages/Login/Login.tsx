@@ -1,23 +1,23 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
-// import style from "./Login.module.css";
+import style from "./Login.module.css";
 
 const Login: React.FC = () => {
   return (
     <main>
       <div className="mainContainer">
         <img src={logo} alt="Tech Meets"></img>
-        <section className="form-container">
+        <form className="form-container">
           <h1>Entre com sua conta</h1>
-          <div className="containerInput">
-            <input id="email" type="text" required />
-            <label className="emailLabel" htmlFor="email">
+          <div className={style.containerInput}>
+            <input id="email" className={style.inputEl} type="text" required />
+            <label className={style.label} htmlFor="email">
               Email
             </label>
           </div>
-          <div className="containerInput">
-            <input id="senha" type="text" required />
-            <label className="senhaLabel" htmlFor="senha">
+          <div id="password" className={style.containerInput}>
+            <input className={style.inputEl} type="text" required />
+            <label className={style.label} htmlFor="password">
               Senha
             </label>
           </div>
@@ -26,7 +26,7 @@ const Login: React.FC = () => {
             <span> ou </span>
             <button className="btn-login">Cadastrar</button>
           </div>
-        </section>
+        </form>
       </div>
     </main>
   );
