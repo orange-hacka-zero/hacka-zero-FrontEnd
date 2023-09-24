@@ -4,6 +4,7 @@ import { BiFilterAlt } from "react-icons/bi";
 import "../../globalStyles.css";
 import style from "./Events.module.css";
 
+import Header from "../../components/Header";
 import TagBtn from "./components/TagBtn";
 import MeetCard from "./components/MeetCard";
 
@@ -18,21 +19,24 @@ const Events: FC = () => {
     link: "encontrodedevs011.com.br/events",
   };
   return (
-    <main className={style.mainContainer}>
-      <h1>Eventos</h1>
-      <section className={style.filtersContainer}>
-        <BiFilterAlt />
-        <ul className={style.filtersListContainer}>
-          <TagBtn>Pagos</TagBtn>
-          <TagBtn>Grátis</TagBtn>
-          <TagBtn>Onlines</TagBtn>
-          <TagBtn>Presenciais</TagBtn>
+    <>
+      <Header />
+      <main className={style.mainContainer}>
+        <h1>Eventos</h1>
+        <section className={style.filtersContainer}>
+          <BiFilterAlt />
+          <ul className={style.filtersListContainer}>
+            <TagBtn>Pagos</TagBtn>
+            <TagBtn>Grátis</TagBtn>
+            <TagBtn>Onlines</TagBtn>
+            <TagBtn>Presenciais</TagBtn>
+          </ul>
+        </section>
+        <ul className={style.eventsContainer}>
+          <MeetCard meetData={meetData} />
         </ul>
-      </section>
-      <ul className={style.eventsContainer}>
-        <MeetCard meetData={meetData} />
-      </ul>
-    </main>
+      </main>
+    </>
   );
 };
 
