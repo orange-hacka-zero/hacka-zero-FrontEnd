@@ -1,0 +1,25 @@
+.btnFormRegister {
+    width: 213.5px;
+    height: 61px;
+    border-radius: 10px;
+    border: 1px solid var(--Color, #fff);
+    background: #107c07;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-family: Heebo;
+    font-size: 1.375rem;
+    font-weight: 500;
+    letter-spacing: 0.44px;
+    position: absolute;
+    bottom: -40px;
+    left: 500px;
+    cursor: pointer;
+  }
+  .btnFormRegister:hover {
+    background-color: #1cb10e;
+    color: var(--text-color);
+    transition: all .4s ease;
+    border: 1px solid var(--text-color);
+  
+  }
+  

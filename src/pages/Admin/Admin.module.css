@@ -1,0 +1,143 @@
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.containerSection {
+  width: 1217px;
+}
+
+.containerFormRegister {
+  width: 1217px;
+  height: 370px;
+  border-radius: 32px;
+  background: var(--bg-blue);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 3.6rem;
+  position: relative;
+}
+
+.wrapperInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputContainer {
+  width: 552px;
+  height: 58px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.inputEl {
+  width: 552px;
+  height: 58px;
+  display: block;
+  padding-left: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  letter-spacing: 2.2px;
+  box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+.label {
+  position: absolute;
+  top: 25px;
+  padding-left: 1rem;
+  pointer-events: none;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+.inputEl:focus ~ .label,
+.inputEl:valid ~ .label {
+  top: -15px;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.descriptionContainer {
+  width: max-content;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 2.5rem;
+  position: relative;
+}
+.descriptionEvent {
+  width: 529px;
+  height: 210px;
+  display: block;
+  padding-left: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  letter-spacing: 2.2px;
+  box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+.descriptionEvent:focus ~ .label,
+.descriptionEvent:valid ~ .label {
+  top: -15px;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.asideFormRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.asideFormRegisterWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.625rem;
+}
+
+.selectForm {
+  width: 165px;
+  height: 58px;
+  border-radius: 10px;
+  background: var(--bg-light);
+  outline: none;
+  color: #210124;
+  font-family: Heebo;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+  text-align: center;
+  cursor: pointer;
+}
+.selectOption {
+  color: var(--text-color);
+  font-family: Heebo;
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+}
+.inputDate {
+  width: 165px;
+  height: 58px;
+  border-radius: 10px;
+  background: var(--bg-light);
+  outline: none;
+  color: #210124;
+  font-family: Heebo;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2.2px;
+  cursor: pointer;
+  text-align: center;
+}
