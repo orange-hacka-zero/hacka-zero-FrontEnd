@@ -7,15 +7,16 @@
 }
 
 .loginContainer {
-  height:50rem;
-  width: 40rem;
+  height:80%;
+  width: 40%;
   border-radius: 40px;
   background: var(--bg-light);
   box-shadow: 13px 13px 11px 0px rgba(0, 0, 0, 0.25);
-  padding: 2rem;
+  padding: 1.5rem;
   display:flex;
   flex-direction:column;
   align-items:center;
+  box-sizing: border-box;
 }
 
 .formContainer {
@@ -25,47 +26,58 @@
   align-items:center;
   flex-shrink: 0;
   border-radius: 36px;
-  margin-top: 3rem;
-  width: 30rem;
-  height: 30rem;
-  padding: 3.5rem;
-  box-shadow: 13px 13px 11px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 1rem;
+  width: 100%;
+  height: 70%;
+  padding: 1rem 2rem;
+  box-shadow: 6px 16px 10px 0px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
 }
 
-h1 {
+.mainTitle {
   color: var(--text-color);
   font-family: Heebo;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.32px;
+  margin-bottom: 1rem;
 }
 
 .inputContainer {
-  width: 400px;
-  height: 70px;
+  width: 100%;
+  height:  2rem;
   position: relative;
-  margin-top: 2.5rem;
+  margin: 1rem 0;
+  box-sizing: content-box;
+}
+
+.inputContainer input {
+  padding: 0.25rem
+}
+
+.inputContainer label {
+  top: 10px;
 }
 
 .btnContainer {
-  margin-top: 6rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
+  width: 100%;
   font-weight: 700;
   font-size: 1.25rem;
 }
 
 .btnLogin {
-  width: 172px;
-  height: 64px;
+  width: 8rem;
+  height: 3rem;
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--text-color);
   color: var(  --bg-light);
   font-family: 'Heebo', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -73,7 +85,7 @@ h1 {
 }
 
 .btnLogin:hover {
-  box-shadow: 2px 2px 5px 0px  rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px 0px  rgb(79 74 101 / 50%);
   cursor: pointer;
 }
 

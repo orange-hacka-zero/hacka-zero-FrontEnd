@@ -10,7 +10,7 @@ const Login: React.FC = () => {
       <div className={style.loginContainer}>
         <img src={logo} alt="Tech Meets"></img>
         <form className={style.formContainer}>
-          <h1>Entre com sua conta</h1>
+          <h1 className={style.mainTitle}>Entre com sua conta</h1>
           <div className={style.inputContainer}>
             <input id="email" className="inputEl" type="text" required />
             <label className="label" htmlFor="email">
