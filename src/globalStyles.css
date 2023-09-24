@@ -51,13 +51,13 @@ body {
   padding-left: 1rem;
   pointer-events: none;
   letter-spacing: 1px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-style: italic;
 }
 
 .inputEl:focus~.label, .inputEl:valid ~ .label {
   top:-10px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding-left: 1rem;
   transition: all .4s ease-in-out;
 } 
