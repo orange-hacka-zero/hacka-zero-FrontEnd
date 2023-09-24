@@ -9,7 +9,6 @@ import MeetCard from "./components/MeetCard";
 
 const Events: FC = () => {
   const meetData = {
-    id: 1,
     name: "Encontro de Devs",
     date: "24/09/2023",
     tags: ["pago", "presencial"],

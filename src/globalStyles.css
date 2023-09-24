@@ -23,7 +23,7 @@ body {
   height: 100vh;
   overflow: hidden;
   color: var(  --text-color);
-  font-family: font-family: 'Cabin', sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 
 ul {

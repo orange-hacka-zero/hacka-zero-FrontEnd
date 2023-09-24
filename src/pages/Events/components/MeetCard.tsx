@@ -9,7 +9,6 @@ import { RxHeart } from "react-icons/rx";
 
 type MeetCardProps = {
   meetData: {
-    id: number;
     name: string;
     date: string;
     tags: string[];

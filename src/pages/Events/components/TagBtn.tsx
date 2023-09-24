@@ -1,5 +1,8 @@
 import React from "react";
 
+import "../../../globalStyles.css";
+import style from "./TagBtn.module.css";
+
 type TabBtnProps = {
   children: string;
 };
@@ -7,7 +10,7 @@ type TabBtnProps = {
 const TagBtn: React.FC<TabBtnProps> = ({ children }) => {
   return (
     <li>
-      <button>{children}</button>
+      <button className={style.tagBtn}>{children}</button>
     </li>
   );
 };
