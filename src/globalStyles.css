@@ -16,7 +16,6 @@ footer, header, nav, section{
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
-  box-sizing: border-box;
 }
 
 li {
