@@ -14,7 +14,10 @@ const Events: FC = () => {
       <section className={style.filtersContainer}>
         <BiFilterAlt />
         <ul className={style.filtersListContainer}>
-          <TagBtn />
+          <TagBtn>Pagos</TagBtn>
+          <TagBtn>Grátis</TagBtn>
+          <TagBtn>Onlines</TagBtn>
+          <TagBtn>Presenciais</TagBtn>
         </ul>
       </section>
       <section className={style.eventsContainer}>
