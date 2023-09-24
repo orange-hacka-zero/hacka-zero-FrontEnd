@@ -6,7 +6,7 @@ import style from "./Login.module.css";
 
 const Login: React.FC = () => {
   return (
-    <main>
+    <main className={style.mainContainer}>
       <div className={style.loginContainer}>
         <img src={logo} alt="Tech Meets"></img>
         <form className={style.formContainer}>
