@@ -1,9 +1,10 @@
 :root {
   --text-color:#210124;
+  --text-tag:  #370FA9;
   --bg-blue:#5A81B2;
   --bg-light: #EDE6DA;
   --header-blue:#909EB1;
-  --light-grey: #D9D9D9,
+  --light-grey: #D9D9D9;
 }
 
 html, body, div, span, main,
@@ -15,6 +16,7 @@ footer, header, nav, section{
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,7 +24,7 @@ body {
   height: 100vh;
   overflow: hidden;
   color: var(  --text-color);
-  font-family: font-family'Cabin', sans-serif;
+  font-family:  'Cabin', sans-serif;
   box-sizing: border-box;
 }
 

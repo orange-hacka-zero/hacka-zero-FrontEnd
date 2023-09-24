@@ -1,0 +1,11 @@
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.eventsContainer {
+  width: 100vw;
+display: flex;
+justify-content:center;
+}

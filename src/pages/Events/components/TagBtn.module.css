@@ -1,0 +1,14 @@
+.tagBtn {
+  border-radius: 10px;
+  border: none;
+  background: var(  --bg-light);
+  color: var( --text-tag);
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+}
