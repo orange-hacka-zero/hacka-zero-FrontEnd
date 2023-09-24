@@ -2,10 +2,79 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  height: 100vh;
+  align-items:center;
+  background-color: var(   --bg-light);
+}
+
+.contentWrapper {
+  border-radius: 30px;
+  background-color: var( --bg-blue);
+  box-shadow: 12px 12px 8px 0px rgba(0, 0, 0, 0.25);
+  width: 75%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:4rem;
+
+}
+
+.mainTitle {
+  color: var(--bg-light);
+  font-family: Heebo;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.48px;
+  padding: 1rem 0 ;
+}
+
+.filtersContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  gap:2rem;
+}
+
+.filterIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--bg-light); 
+}
+
+.filtersListContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
 }
 
 .eventsContainer {
-  width: 100vw;
-display: flex;
-justify-content:center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  overflow-y: scroll;
+  margin: 1.2rem 0;
 }
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-light);
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(  --header-blue);
+}
+::-webkit-scrollbar-thumb {
+  background: var(  --header-blue);
+  border-radius: 5px;
+
+}
+
