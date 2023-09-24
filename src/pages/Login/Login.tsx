@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
-import "../../globalStyles.css";
 
+import "../../globalStyles.css";
 import style from "./Login.module.css";
 
 const Login: React.FC = () => {
