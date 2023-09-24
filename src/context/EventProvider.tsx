@@ -5,7 +5,6 @@ type EventsContextProps = {
 };
 
 type EventsContextType = {
-  nome: string;
   showDetails: boolean;
   setShowDetails: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -13,7 +12,6 @@ type EventsContextType = {
 const EventContext = createContext<EventsContextType>({} as EventsContextType);
 const EventProvider: React.FC<EventsContextProps> = ({ children }) => {
   const [showDetails, setShowDetails] = useState(false);
-  const nome = "mari";
 
   useEffect(() => {
     console.log("context render");
@@ -23,7 +21,6 @@ const EventProvider: React.FC<EventsContextProps> = ({ children }) => {
       value={{
         showDetails,
         setShowDetails,
-        nome,
       }}
     >
       {children}

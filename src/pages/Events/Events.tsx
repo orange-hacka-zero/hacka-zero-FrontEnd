@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
 import { BiFilterAlt } from "react-icons/bi";
 
 import "../../globalStyles.css";
@@ -7,6 +7,7 @@ import style from "./Events.module.css";
 import Header from "../../components/Header";
 import TagBtn from "./components/TagBtn";
 import MeetCard from "./components/MeetCard";
+import { EventContext } from "@/context/EventProvider";
 
 const Events: FC = () => {
   const meetData = {
@@ -18,6 +19,10 @@ const Events: FC = () => {
     address: "Avenida Sol Nascente - N: 03 - São Paulo - Capital",
     link: "encontrodedevs011.com.br/events",
   };
+
+  const { showDetails } = useContext(EventContext);
+
+  console.log(showDetails);
   return (
     <>
       <Header />
