@@ -6,6 +6,7 @@ import style from "./MeetCard.module.css";
 import { RxInfoCircled } from "react-icons/rx";
 import { RxHeart } from "react-icons/rx";
 // import { RxHeartFilled } from "react-icons/rx";
+import TagComponent from "../../../components/TagComponent";
 
 type MeetCardProps = {
   meetData: {
@@ -26,9 +27,7 @@ const MeetCard: React.FC<MeetCardProps> = ({ meetData }) => {
       </section>
       <ul className={style.wrapper}>
         {tags.map((tag: string) => (
-          <li key={tag} className={style.tag}>
-            {tag}
-          </li>
+          <TagComponent tag={tag} key={tag} />
         ))}
       </ul>
       <section className={style.wrapper}>
