@@ -37,6 +37,9 @@ const Events: FC = () => {
             <MeetCard meetData={meetData} />
             <MeetCard meetData={meetData} />
             <MeetCard meetData={meetData} />
+            <MeetCard meetData={meetData} />
+            <MeetCard meetData={meetData} />
+            <MeetCard meetData={meetData} />
           </ul>
         </section>
       </main>
