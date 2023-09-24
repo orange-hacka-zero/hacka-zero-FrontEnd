@@ -3,7 +3,6 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  justify-content:center;
   align-items:center;
   background-color: var(   --bg-light);
 }
@@ -17,7 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem
+  margin-top:2.5rem;
+
 }
 
 .mainTitle {
@@ -28,7 +28,7 @@
   font-weight: 500;
   line-height: normal;
   letter-spacing: 4.48px;
-  padding: 1rem 0 1.5rem;
+  padding: 1rem 0 ;
 }
 
 .filtersContainer {
@@ -37,6 +37,12 @@
   align-items: center;
 width: 75%;
 gap: 1rem;
+}
+
+.filterIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--bg-light); 
 }
 
 .filtersListContainer {
@@ -52,10 +58,9 @@ gap: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 2rem;
   gap: 0.5rem;
   overflow-y: scroll;
-margin: 1.2rem 0;
+  margin: 1.2rem 0;
 }
 
 ::-webkit-scrollbar-track {

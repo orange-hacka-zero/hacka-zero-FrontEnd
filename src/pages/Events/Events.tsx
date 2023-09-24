@@ -25,7 +25,7 @@ const Events: FC = () => {
         <section className={style.contentWrapper}>
           <h1 className={style.mainTitle}>Eventos</h1>
           <section className={style.filtersContainer}>
-            <BiFilterAlt />
+            <BiFilterAlt className={style.filterIcon} />
             <ul className={style.filtersListContainer}>
               <TagBtn>Pagos</TagBtn>
               <TagBtn>Grátis</TagBtn>
@@ -34,6 +34,7 @@ const Events: FC = () => {
             </ul>
           </section>
           <ul className={style.eventsContainer}>
+            <MeetCard meetData={meetData} />
             <MeetCard meetData={meetData} />
             <MeetCard meetData={meetData} />
           </ul>
