@@ -22,19 +22,22 @@ const Events: FC = () => {
     <>
       <Header />
       <main className={style.mainContainer}>
-        <h1>Eventos</h1>
-        <section className={style.filtersContainer}>
-          <BiFilterAlt />
-          <ul className={style.filtersListContainer}>
-            <TagBtn>Pagos</TagBtn>
-            <TagBtn>Grátis</TagBtn>
-            <TagBtn>Onlines</TagBtn>
-            <TagBtn>Presenciais</TagBtn>
+        <section className={style.contentWrapper}>
+          <h1 className={style.mainTitle}>Eventos</h1>
+          <section className={style.filtersContainer}>
+            <BiFilterAlt />
+            <ul className={style.filtersListContainer}>
+              <TagBtn>Pagos</TagBtn>
+              <TagBtn>Grátis</TagBtn>
+              <TagBtn>Onlines</TagBtn>
+              <TagBtn>Presenciais</TagBtn>
+            </ul>
+          </section>
+          <ul className={style.eventsContainer}>
+            <MeetCard meetData={meetData} />
+            <MeetCard meetData={meetData} />
           </ul>
         </section>
-        <ul className={style.eventsContainer}>
-          <MeetCard meetData={meetData} />
-        </ul>
       </main>
     </>
   );

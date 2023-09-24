@@ -7,7 +7,7 @@
   --light-grey: #D9D9D9;
 }
 
-html, body, div, span, main,
+html, body, div, span, main, ul,
 h1, h2, h3, h4, h5, h6, p,  img, form, label, 
 table, caption, tbody, tfoot, thead, tr, th, td, aside, 
 footer, header, nav, section{
@@ -54,6 +54,7 @@ body {
   font-size: 1.25rem;
   font-style: italic;
 }
+
 .inputEl:focus~.label, .inputEl:valid ~ .label {
   top:-10px;
   font-size: 1.25rem;
