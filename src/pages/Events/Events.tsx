@@ -19,7 +19,7 @@ const Events: FC = () => {
     link: "encontrodedevs011.com.br/events",
   };
   return (
-    <main>
+    <main className={style.mainContainer}>
       <h1>Eventos</h1>
       <section className={style.filtersContainer}>
         <BiFilterAlt />
@@ -30,9 +30,9 @@ const Events: FC = () => {
           <TagBtn>Presenciais</TagBtn>
         </ul>
       </section>
-      <section className={style.eventsContainer}>
+      <ul className={style.eventsContainer}>
         <MeetCard meetData={meetData} />
-      </section>
+      </ul>
     </main>
   );
 };

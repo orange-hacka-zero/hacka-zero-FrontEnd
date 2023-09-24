@@ -1,9 +1,10 @@
 :root {
   --text-color:#210124;
+  --text-tag:  #370FA9;
   --bg-blue:#5A81B2;
   --bg-light: #EDE6DA;
   --header-blue:#909EB1;
-  --light-grey: #D9D9D9,
+  --light-grey: #D9D9D9;
 }
 
 html, body, div, span, main,
@@ -23,6 +24,10 @@ body {
   overflow: hidden;
   color: var(  --text-color);
   font-family: font-family: 'Cabin', sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 .inputEl {

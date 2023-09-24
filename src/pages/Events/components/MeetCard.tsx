@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../../../globalStyles.css";
-import style from "../Events.module.css";
+import style from "./MeetCard.module.css";
 
 import { RxInfoCircled } from "react-icons/rx";
 import { RxHeart } from "react-icons/rx";
@@ -20,22 +20,24 @@ type MeetCardProps = {
 const MeetCard: React.FC<MeetCardProps> = ({ meetData }) => {
   const { name, date, tags } = meetData;
   return (
-    <li>
-      <section>
-        <h2>{name}</h2>
-        <h3>{date}</h3>
+    <li className={style.mainContainer}>
+      <section className={style.mainInfoContainer}>
+        <h2 className={`${style.mainInfo} ${style.name}`}>{name}</h2>
+        <h2 className={`${style.mainInfo} ${style.date}`}>{date}</h2>
       </section>
-      <ul>
+      <ul className={style.wrapper}>
         {tags.map((tag: string) => (
-          <li key={tag}>{tag}</li>
+          <li key={tag} className={style.tag}>
+            {tag}
+          </li>
         ))}
       </ul>
-      <section className={style.iconsContainer}>
-        <button>
-          <RxHeart />
+      <section className={style.wrapper}>
+        <button className={style.iconBtn}>
+          <RxHeart className={style.icon} />
         </button>
-        <button>
-          <RxInfoCircled />
+        <button className={style.iconBtn}>
+          <RxInfoCircled className={style.icon} />
         </button>
       </section>
     </li>
