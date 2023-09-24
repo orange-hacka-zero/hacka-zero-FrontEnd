@@ -1,12 +1,14 @@
 import { FC } from "react";
 import style from "./Admin.module.css";
 import Button from "./components/Button/Button";
-// import "../../globalStyles.css";
+import Header from "@/components/Header";
+import { RxMagnifyingGlass } from "react-icons/rx";
+import CardEvent from "./components/CardEvent/CardEvent";
 
 const Admin: FC = () => {
   return (
     <>
-      <header>header</header>
+      <Header />
       <main className={style.containerMain}>
         <section className={style.containerSection}>
           <form className={style.containerFormRegister}>
@@ -88,6 +90,51 @@ const Admin: FC = () => {
             </section>
             <Button title="Cadastrar" />
           </form>
+
+          <h2 className={style.titleEventsRegister}>Eventos cadastrados</h2>
+
+          <section className={style.containerRegisteredEvents}>
+            <div className={style.containerSearch}>
+              <input
+                className={style.inputSearch}
+                type="text"
+                placeholder="Buscar evento"
+              />
+              <span className={style.elipseIcon}>
+                <RxMagnifyingGlass />
+              </span>
+            </div>
+
+            <div className={style.containerEventsScroll}>
+              <CardEvent
+                title="Encontros de Devs"
+                date="24/09/2023"
+                address="Avenida Sol Nascente - N: 03 - São Paulo - Capital"
+                link="encontrodedevs.com.br/eventos"
+                description="Participe da nossa reunião de desenvolvedores, onde temas fascinantes e palestrantes
+                renomados se encontram para uma experiência imperdível na vanguarda da tecnologia.
+                Junte-se a nós e explore o futuro!"
+              />
+              <CardEvent
+                title="Encontros de Devs"
+                date="24/09/2023"
+                address="Avenida Sol Nascente - N: 03 - São Paulo - Capital"
+                link="encontrodedevs.com.br/eventos"
+                description="Participe da nossa reunião de desenvolvedores, onde temas fascinantes e palestrantes
+                renomados se encontram para uma experiência imperdível na vanguarda da tecnologia.
+                Junte-se a nós e explore o futuro!"
+              />
+              <CardEvent
+                title="Encontros de Devs"
+                date="24/09/2023"
+                address="Avenida Sol Nascente - N: 03 - São Paulo - Capital"
+                link="encontrodedevs.com.br/eventos"
+                description="Participe da nossa reunião de desenvolvedores, onde temas fascinantes e palestrantes
+                renomados se encontram para uma experiência imperdível na vanguarda da tecnologia.
+                Junte-se a nós e explore o futuro!"
+              />
+            </div>
+          </section>
         </section>
       </main>
     </>

@@ -1,0 +1,135 @@
+.containerCardEvent {
+  width: 1036px;
+  height: 294px;
+  background-color: white;
+  filter: drop-shadow(9px 8px 7px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.cardEvent {
+  width: 961px;
+  height: 111px;
+  border-radius: 11px;
+  background: #d9d9d9;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.cardEventFirst {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  padding: 0.5rem;
+}
+.cardEventTitle {
+  color: #210124;
+  font-family: Cabin;
+  font-size: 1.785rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+.cardEventAddress {
+  color: #210124;
+  font-family: Cabin;
+  font-size: 1.063rem;
+  font-weight: 400;
+  letter-spacing: 0.34px;
+}
+
+.cardEventLink {
+  color: #210124;
+  font-family: Cabin;
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  letter-spacing: 1.7px;
+}
+.cardEventLink:hover {
+  color: var(--bg-blue);
+  transition: all 0.4s ease;
+}
+.cardEventData {
+  color: var(--text-color);
+  font-family: Heebo;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+}
+.cotainertags {
+  display: flex;
+  gap: 28px;
+}
+
+.cardEventInfo {
+  width: 961px;
+  height: 110.727px;
+  border-radius: 11px;
+  background: var(--light-grey);
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.cardEventInfoDescription {
+  width: 762px;
+  height: 110.727px;
+  color: var(--text-color);
+  border-radius: 21px;
+  background: #d9d9d9;
+  font-family: Cabin;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 123.523%;
+  letter-spacing: 1.12px;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+}
+
+.cardEventSecondary {
+  width: 961px;
+  height: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* botoes */
+.containerBtn {
+  width: 170px;
+  height: 111px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: var(--light-grey);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btnCardInfo {
+  width: 133px;
+  height: 31px;
+  border-radius: 7px;
+  background: #fff;
+  color: var(--text-color);
+  font-family: Heebo;
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 119.023%; 
+  letter-spacing: 0.78px;
+  border: none;
+  cursor: pointer;
+}
+.btnCardInfo:hover {
+  background-color: var(--bg-blue);
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
