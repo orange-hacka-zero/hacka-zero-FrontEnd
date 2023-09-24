@@ -22,7 +22,8 @@ body {
   height: 100vh;
   overflow: hidden;
   color: var(  --text-color);
-  font-family: font-family: 'Cabin', sans-serif;
+  font-family: font-family'Cabin', sans-serif;
+  box-sizing: border-box;
 }
 
 .inputEl {
